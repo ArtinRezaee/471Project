@@ -1,0 +1,38 @@
+<head>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="login.css" type="text/css">
+</head>
+<body>
+<div class="login-page">
+<div class="logo">
+<a href="index.html">
+<img src="logo.png"> 
+</img>
+</a>
+</div>
+  <div class="form">
+    <form class="login-form">
+    <p>Create a new user profile</p>
+      <input type="text" placeholder="Profile Name" required/>
+      Profile Type
+      <p>
+      
+      <select name="Profile Type" required>
+      <option value="Normal">Normal</option>
+      <option value="Child">Child</option>
+      </select>
+      <br>
+      </p>
+      <button>Create</button>
+    </form>
+  </div>
+</div>
+<script> $('.message a').click(function(){
+   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+});
+</script>
+</body>
